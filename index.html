@@ -1,55 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <title>SpartacuS Slot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <style>
-    body {
-      background: url('images/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Georgia', serif;
-      text-align: center;
-      margin: 0;
-    }
-    h1 {
-      margin-top: 20px;
-      font-size: 48px;
-      color: gold;
-      text-shadow: 2px 2px black;
-    }
-    .slot {
-      display: flex;
-      justify-content: center;
-      margin: 30px auto;
-      gap: 10px;
-    }
-    .reel {
-      width: 100px; height: 100px;
-      background: rgba(0,0,0,0.7);
-      border: 2px solid gold;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .reel img {
-      width: 64px;
-      height: 64px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>SpartacuS Slot</h1>
-  <div class="slot">
-    <div class="reel"><img src="images/helmet.png"></div>
-    <div class="reel"><img src="images/shield.png"></div>
-    <div class="reel"><img src="images/colosseum.png"></div>
-    <div class="reel"><img src="images/sword.png"></div>
-    <div class="reel"><img src="images/gold.png"></div>
+  <div id="credits">Crediti: <span id="crediti">1000</span></div>
+  <div id="status"></div>
+  <div id="slot" class="slot">
+    <div class="reel"><img src="images/helmet.png" /></div>
+    <div class="reel"><img src="images/shield.png" /></div>
+    <div class="reel"><img src="images/colosseum.png" /></div>
+    <div class="reel"><img src="images/sword.png" /></div>
+    <div class="reel"><img src="images/gold.png" /></div>
   </div>
+  <button onclick="giraSlot()">🎰 GIRA</button>
+  <button onclick="ricaricaCrediti()" id="btnRicarica" style="display:none">💰 Ricarica</button>
+  <audio id="musicSpin" src="sounds/bg-music.mp3" loop></audio>
+  <audio id="musicWin" src="sounds/win-sound.mp3"></audio>
+  <script src="script.js"></script>
 </body>
 </html>

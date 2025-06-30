@@ -1,0 +1,50 @@
+
+body {
+  background: #111;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 48px;
+  color: gold;
+  margin-top: 20px;
+  text-shadow: 2px 2px black;
+}
+.slot {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+.reel {
+  width: 100px;
+  height: 100px;
+  background: #222;
+  border: 2px solid gold;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ffd700aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reel img {
+  width: 64px;
+  height: 64px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#status {
+  margin-top: 10px;
+  font-size: 20px;
+}
